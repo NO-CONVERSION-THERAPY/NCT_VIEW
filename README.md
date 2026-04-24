@@ -24,6 +24,18 @@
 
 ## 🚀 快速開始
 
+### 0. API食用指南
+
+#### 後端架構
+
+首先受害者的表單會通過Google Forms傳送到Google Sheets，在這裏和牧鳶整理的數據進行混合，並通過Google App Script和Google map將每一條數據標記上經緯度，並計算出各個統計數據的值。
+
+Google App Script將統計數據和所有表單打包封裝進Json裏，這是第一層api。
+
+[NCT_API](https://github.com/NO-CONVERSION-THERAPY/NCT_API)項目將第一層api進行清洗后，形成第二層api，並供下游項目使用。
+
+請前往[NCT_API README](https://github.com/NO-CONVERSION-THERAPY/NCT_API)查看api的具體使用指南。
+
 ### 1. 克隆項目
 ```bash
 git clone https://github.com/NO-CONVERSION-THERAPY/NCT_VIEW.git
